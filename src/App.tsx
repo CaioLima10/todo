@@ -1,5 +1,10 @@
+import { Text } from "./components/text";
+
 export function App() {
   return (
-    <div className="text-green-dark">Hello world</div>
+    <>
+      <Text variant={"body-md-bold"} className="bg-pink-base">Hello world</Text>
+      <Text variant={"body-md"} className="bg-pink-base">Hello world</Text>
+    </>
   )
 }
