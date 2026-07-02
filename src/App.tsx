@@ -9,10 +9,11 @@ import PlusIcon from "../src/assets/icons/plus.svg?react"
 import { ButtonIcon } from "./components/buttonIcon";
 import { InputText } from "./components/inputText";
 import { InputCheckBox } from "./components/inputCheckBox";
+import { Card } from "./components/card";
 
 export function App() {
   return (
-    <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-10 min-h-screen">
     <div>
       <Icon svg={LogoIcon} />
     </div>
@@ -37,6 +38,9 @@ export function App() {
     <div>
       <InputCheckBox type="checkbox" icon={CheckIcon}/>
     </div>
+    <Card size={"md"} className="w-40 h-20">
+      <InputCheckBox type="checkbox" icon={CheckIcon}/>
+    </Card>
     </section>
   )
 }
